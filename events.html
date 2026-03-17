@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Events - EventHub</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <header>
+
+        <div class="logo">EventHub</div>
+
+        <div class="menu-toggle">☰</div>
+
+        <nav id="navMenu">
+
+            <a href="index.html">Home</a>
+            <a href="events.html">Events</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+
+
+        </nav>
+
+
+
+    </header>
+
+
+    <main>
+
+        <h1 style="text-align:center;margin-top:30px;">All Events</h1>
+
+        <div class="search-box">
+            <input type="text" id="searchInput" placeholder="Search events...">
+            <button onclick="searchEvents()"> Search </button>
+        </div>
+
+        <section class="category-filter">
+
+            <button onclick="filterEvents('All')">All</button>
+
+            <button onclick="filterEvents('Music')">🎵 Music</button>
+
+            <button onclick="filterEvents('Food')">🍔 Food</button>
+
+            <button onclick="filterEvents('Tech')">💻 Tech</button>
+
+            <button onclick="filterEvents('Cultural')">🎭 Cultural</button>
+
+            <button onclick="filterEvents('Sports')">🏃 Sports</button>
+
+        </section>
+
+
+        <section class="events" id="eventsContainer">
+
+        </section>
+
+
+    </main>
+
+
+    <footer class="footer">
+
+        <div class="footer-container">
+
+            <div class="footer-box">
+                <h3>EventHub</h3>
+                <p>Your one-stop platform to discover amazing events near you.</p>
+            </div>
+
+            <div class="footer-box">
+                <h3>Quick Links</h3>
+                <a href="index.html">Home</a>
+                <a href="events.html">Events</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+            </div>
+
+            <div class="footer-box">
+                <h3>Contact</h3>
+                <p>Email: info@eventhub.com</p>
+                <p>Phone: +91 9876543210</p>
+                <p>Location: Gujarat, India</p>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2026 EventHub. All Rights Reserved.</p>
+        </div>
+
+    </footer>
+
+
+    <script src="events.js"></script>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
