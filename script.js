@@ -162,3 +162,40 @@ showSlide(index);
 },4000);
 
 }
+
+
+
+const form = document.getElementById("contactForm");
+
+if(form){
+form.addEventListener("submit", function(e){
+e.preventDefault();
+
+// Get values
+const name = document.getElementById("name").value;
+const email = document.getElementById("email").value;
+const message = document.getElementById("message").value;
+
+// Create object
+const contactData = {
+name: name,
+email: email,
+message: message
+};
+
+// Get existing data or empty array
+let contacts = JSON.parse(localStorage.getItem("contacts")) || [];
+
+// Add new data
+contacts.push(contactData);
+
+// Save back to localStorage
+localStorage.setItem("contacts", JSON.stringify(contacts));
+
+// Success message
+alert("Message saved successfully! ✅");
+
+// Reset form
+form.reset();
+});
+}
